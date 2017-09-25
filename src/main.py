@@ -9,6 +9,8 @@ sense = SenseHat( )
 sense.clear( )
 sense.low_light = True
 
+mode = 1
+
 list1 = [
      [ 0 , 0 ] , [ 1 , 0 ] , [ 2 , 0 ] , [ 3 , 0 ] , [ 4 , 0 ] , [ 5 , 0 ] , [ 6 , 0 ] , [ 7 , 0 ] ,
      [ 0 , 1 ] , [ 1 , 1 ] , [ 2 , 1 ] , [ 3 , 1 ] , [ 4 , 1 ] , [ 5 , 1 ] , [ 6 , 1 ] , [ 7 , 1 ] ,
@@ -24,7 +26,12 @@ while True :
 
     random.shuffle( list1 )
 
-    c = [ random.randint( 0 , 255 ) , random.randint( 0 , 255 ) , random.randint( 0 , 255 ) ]
+
+    if mode==1:
+        c = [ random.randint( 0 , 255 ) , random.randint( 0 , 255 ) , random.randint( 0 , 255 ) ]
+    else:
+        c=[0,0,0]
+    mode=mode*-1
 
     for i in range( len( list1 ) ) :
 
