@@ -7,6 +7,7 @@ import random
 
 sense = SenseHat( )
 sense.clear( )
+sense.low_light = True
 
 list1 = [
      [ 0 , 0 ] , [ 1 , 0 ] , [ 2 , 0 ] , [ 3 , 0 ] , [ 4 , 0 ] , [ 5 , 0 ] , [ 6 , 0 ] , [ 7 , 0 ] ,
@@ -29,5 +30,5 @@ while True :
 
         sense.set_pixel( list1[ i ][ 0 ] , list1[ i ][ 1 ] , c )
 
-        time.sleep( 1.0 / 24.0 )    
+        time.sleep( 1.0 / 64.0 )    
 
