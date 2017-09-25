@@ -26,7 +26,6 @@ while True :
 
     random.shuffle( list1 )
 
-
     if mode == 1 :
 
         c = [ random.randint( 40 , 255 ) , random.randint( 40 , 255 ) , random.randint( 40 , 255 ) ]
@@ -41,5 +40,5 @@ while True :
 
         sense.set_pixel( list1[ i ][ 0 ] , list1[ i ][ 1 ] , c )
 
-        time.sleep( 1.0 / 64.0 )    
+        time.sleep( 30.0 / 64.0 )    
 
