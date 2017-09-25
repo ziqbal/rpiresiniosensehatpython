@@ -1,5 +1,5 @@
 
-FROM resin/armv7hf-debian:stretch
+FROM resin/raspberrypi3-debian:latest
 
 RUN apt-get update && apt-get install -yq python sense-hat raspberrypi-bootloader && apt-get clean && rm -rf /var/lib/apt/lists/*
 
