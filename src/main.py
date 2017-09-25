@@ -27,15 +27,19 @@ while True :
     random.shuffle( list1 )
 
 
-    if mode==1:
-        c = [ random.randint( 0 , 255 ) , random.randint( 0 , 255 ) , random.randint( 0 , 255 ) ]
+    if mode == 1 :
+
+        c = [ random.randint( 40 , 255 ) , random.randint( 40 , 255 ) , random.randint( 40 , 255 ) ]
+
     else:
-        c=[0,0,0]
-    mode=mode*-1
+
+        c = [ 0 , 0 , 0 ]
+
+    mode = mode * -1
 
     for i in range( len( list1 ) ) :
 
         sense.set_pixel( list1[ i ][ 0 ] , list1[ i ][ 1 ] , c )
 
-        time.sleep( 60.0 / 64.0 )    
+        time.sleep( 1.0 / 64.0 )    
 
