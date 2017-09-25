@@ -30,5 +30,5 @@ while True :
 
         sense.set_pixel( list1[ i ][ 0 ] , list1[ i ][ 1 ] , c )
 
-        time.sleep( 1.0 / 64.0 )    
+        time.sleep( 60.0 / 64.0 )    
 
