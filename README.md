@@ -1,4 +1,5 @@
 
 # Raspberry Pi / Resin.IO / Sense Hat / Python
 
-Minimal resin.io compatible project for the Raspberry Pi to connect to the the Sense HAT add-on board using Python.
+YASG for the resin.io workshop/hackathon Athens 2017-09-23
+
