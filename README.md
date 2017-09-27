@@ -1,5 +1,5 @@
 
-# Raspberry Pi / Resin.IO / Sense Hat / Python
+# Raspberry Pi / Resin.IO / Sense Hat / Python / Snake
 
 Snake game written in Python using the Gyroscope on a Sense Hat attached to a Raspberry Pi 3.
 
